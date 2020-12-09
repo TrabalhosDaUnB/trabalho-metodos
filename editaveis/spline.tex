@@ -1,2 +1,10 @@
 \chapter[Método Spline]{Método Spline}
 \label{cap:metodo}
+
+\section{Introdução}
+
+No dia a dia de cientistas e engenheiros, é comum ter que tomar várias medidas de um mesmo experimento ou evento. A partir dessas medidas, é desejável conhecer o polinômio por trás do qual esses valores são obtidos.
+
+As possibilidades para a situação acima podem ser dividas em duas situações gerais. A primeira é quando se quer umaa função que se ajusta perfeitamente aos dados existentes. Já a segunda é quando sabe-se que os dados obtidos possuem algum erro, e por isso a função desejada não irá passar exatamente por todos os pontos, pois nesse caso a ideia é ter um melhor ajuste à tendência dos dados, e não a estes em si \cite{lindfieldnumerical}.
+
+O nome que damos a esse processo de buscar, a partir de dados discretos, estimar valores intermediários usando funções é \textbf{interpolação}. Dentre os tipos de interpolação, o método mais comum é a interpolação polinomial \cite{chaprametodos}. Neste, usamos polinômios de grau \textit{n} para interpolar $n + 1$ pontos de dados \cite{chaprametodos}. Mas o problema da interpolação polinomial é que, dependendo do número de pontos de dados existentes e, consequentemente, da ordem do polinômio, haverão erros de arredondamento e de estimativa \cite{chaprametodos}.
